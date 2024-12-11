@@ -4,7 +4,16 @@ const Navbar = () => {
       <h1>blogSYNC</h1>
       <div className="links">
         <a href="/">home</a>
-        <a href="/create">newBlog</a>
+        <a
+          href="/create"
+          style={{
+            color: "white",
+            backgroundColor: "#f1356d",
+            borderRadius: "8px",
+          }}
+        >
+          newBlog
+        </a>
       </div>
     </nav>
   );
