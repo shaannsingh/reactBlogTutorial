@@ -14,6 +14,10 @@ const HomePage = () => {
     setBlogs(newBlogs);
   };
 
+  useEffect(() => {
+    console.log("ran");
+  }, []);
+
   return (
     <div className="homepage">
       <BlogList blogs={blogs} heading="All" handleDelete={handleDelete} />
