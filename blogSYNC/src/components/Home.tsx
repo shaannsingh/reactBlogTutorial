@@ -1,21 +1,22 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import BlogList from "./BlogList";
 import { Blog } from "../types";
 
 const HomePage = () => {
   const [blogs, setBlogs] = useState<Blog[]>([
-    { title: "hi", body: "This is blog 1", author: "shaan", id: 1 },
-    { title: "who am i", body: "This is blog 2", author: "malcolm", id: 2 },
-    { title: "what i like", body: "This is blog 3", author: "kanye", id: 3 },
+    { title: "Hi", body: "This is blog 1", author: "Shaan", id: 1 },
+    { title: "Who Am I", body: "This is blog 2", author: "Malcolm", id: 2 },
+    { title: "What I Like", body: "This is blog 3", author: "Kanye", id: 3 },
   ]);
+
+  const handleDelete = (id: number) => {
+    const newBlogs = blogs.filter((blog) => blog.id !== id);
+    setBlogs(newBlogs);
+  };
 
   return (
     <div className="homepage">
-      <BlogList blogs={blogs} header="all blogs" />
-      <BlogList
-        blogs={blogs.filter((blog) => blog.author === "malcolm")}
-        header="malcolm's blogs"
-      />
+      <BlogList blogs={blogs} heading="All" handleDelete={handleDelete} />
     </div>
   );
 };

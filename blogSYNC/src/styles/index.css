@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
 
 /* base styles */
 * {
   margin: 0;
-  font-family: "Quicksand";
+  font-family: "Merriweather";
   color: #333;
 }
 .navbar {
@@ -20,14 +20,29 @@
 .navbar .links {
   margin-left: auto;
 }
-.navbar a {
+.navbar .home-link {
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
-}
-.navbar a:hover {
   color: #42a8c9;
 }
+.navbar .home-link:hover {
+  color: #2c728a;
+}
+
+.navbar .new-blog-link {
+  margin-left: 4px;
+  text-decoration: none;
+  padding: 6px;
+  color: white;
+  background-color: #42a8c9;
+  border-radius: 8px;
+}
+
+.navbar .new-blog-link:hover {
+  background-color: #2c728a;  /* Optional: darker shade on hover */
+}
+
 .content {
   max-width: 100vh;
   margin: 20px auto;
@@ -52,4 +67,24 @@
   font-size: 20px;
   color: #42a8c9;
   margin-bottom: 8px;
+}
+
+.blog-preview p {
+  color: #2c728a;
+}
+
+.blog-preview button {
+  background: #c5ebe1;
+  border: 0;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.blog-preview button:hover {
+  background: #42a8c9;
 }

@@ -1,18 +1,13 @@
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <h1>blog</h1>
+      <h1>Blog</h1>
       <div className="links">
-        <a href="/">home</a>
-        <a
-          href="/create"
-          style={{
-            color: "white",
-            backgroundColor: "#42a8c9",
-            borderRadius: "8px",
-          }}
-        >
-          new
+        <a href="/" className="home-link">
+          Home
+        </a>
+        <a href="/create" className="new-blog-link">
+          New
         </a>
       </div>
     </nav>
