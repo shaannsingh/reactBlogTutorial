@@ -4,10 +4,9 @@ import { Trash2 } from "lucide-react";
 interface BlogListProps {
   blogs: Blog[];
   heading: string;
-  handleDelete: (id: number) => void;
 }
 
-const BlogList = ({ blogs, heading, handleDelete }: BlogListProps) => {
+const BlogList = ({ blogs, heading }: BlogListProps) => {
   return (
     <div className="blog-list">
       <h2>{heading}</h2>
@@ -15,10 +14,7 @@ const BlogList = ({ blogs, heading, handleDelete }: BlogListProps) => {
         <div className="blog-preview" key={blog.id}>
           <h2>{blog.title}</h2>
           <p>by {blog.author}</p>
-          <button
-            onClick={() => handleDelete(blog.id)}
-            aria-label={`Delete ${blog.title} blog`}
-          >
+          <button aria-label={`Delete ${blog.title} blog`}>
             <Trash2 size={12} />
           </button>
         </div>
