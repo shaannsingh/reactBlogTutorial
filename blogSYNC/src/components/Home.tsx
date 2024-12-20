@@ -3,11 +3,8 @@ import BlogList from "./BlogList";
 import { Blog } from "../types";
 
 const HomePage = () => {
-  const [blogs, setBlogs] = useState<Blog[]>([
-    { title: "Hi", body: "This is blog 1", author: "Shaan", id: 1 },
-    { title: "Who Am I", body: "This is blog 2", author: "Malcolm", id: 2 },
-    { title: "What I Like", body: "This is blog 3", author: "Kanye", id: 3 },
-  ]);
+  const [blogs, setBlogs] = useState<Blog[]>([]);
+  const [isPending, setIsPending] = useState<boolean>(true);
 
   const handleDelete = (id: number) => {
     const newBlogs = blogs.filter((blog) => blog.id !== id);
@@ -15,12 +12,27 @@ const HomePage = () => {
   };
 
   useEffect(() => {
-    console.log("ran");
+    setTimeout(() => {
+      fetch("http://localhost:8000/blogs")
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          setBlogs(data);
+          setIsPending(false);
+        })
+        .catch((err) => {
+          console.log(err.message);
+        });
+    }, 1000);
   }, []);
 
   return (
     <div className="homepage">
-      <BlogList blogs={blogs} heading="All" handleDelete={handleDelete} />
+      {isPending && <div>Loading...</div>}
+      {blogs && (
+        <BlogList blogs={blogs} heading="All" handleDelete={handleDelete} />
+      )}
     </div>
   );
 };
