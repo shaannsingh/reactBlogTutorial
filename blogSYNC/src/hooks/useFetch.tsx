@@ -10,6 +10,7 @@ const useFetch = (url: string) => {
     setTimeout(() => {
       fetch(url)
         .then((response) => {
+          if (!response.ok) throw Error("Couldn't fetch");
           return response.json();
         })
         .then((data) => {
