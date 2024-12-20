@@ -7,23 +7,21 @@ const useFetch = (url: string) => {
   const [error, setError] = useState<string>("");
 
   useEffect(() => {
-    setTimeout(() => {
-      fetch(url)
-        .then((response) => {
-          if (!response.ok) throw Error("Couldn't fetch");
-          return response.json();
-        })
-        .then((data) => {
-          console.log(data);
-          setData(data);
-          setIsPending(false);
-          setError("");
-        })
-        .catch((err) => {
-          setError(err.message);
-          setIsPending(false);
-        });
-    }, 1000);
+    fetch(url)
+      .then((response) => {
+        if (!response.ok) throw Error("Couldn't fetch");
+        return response.json();
+      })
+      .then((data) => {
+        console.log(data);
+        setData(data);
+        setIsPending(false);
+        setError("");
+      })
+      .catch((err) => {
+        setError(err.message);
+        setIsPending(false);
+      });
   }, [url]);
 
   return { data, isPending, error };

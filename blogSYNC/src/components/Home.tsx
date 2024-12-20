@@ -12,7 +12,9 @@ const HomePage = () => {
     <div className="homepage">
       {error && <div>{error}</div>}
       {isPending && <div>Loading...</div>}
-      {blogs && <BlogList blogs={blogs} heading="All" />}
+      {!isPending && !error && blogs.length > 0 && (
+        <BlogList blogs={blogs} heading="All" />
+      )}
     </div>
   );
 };
