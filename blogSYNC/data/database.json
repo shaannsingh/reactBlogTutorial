@@ -1,22 +1,82 @@
 {
-    "blogs": [
-        { 
-            "title": "Hi", 
-            "body": "This is blog 1", 
-            "author": "Shaan", 
-            "id": 1 
-        },
-        { 
-            "title": "Who Am I", 
-            "body": "This is blog 2", 
-            "author": "Malcolm", 
-            "id": 2 
-        },
-        { 
-            "title": "What I Like", 
-            "body": "This is blog 3", 
-            "author": "Kanye", 
-            "id": 3 
-        }
-    ]
-} 
+  "blogs": [
+    {
+      "title": "Hi",
+      "body": "This is blog 1",
+      "author": "Shaan",
+      "id": "1"
+    },
+    {
+      "title": "Who Am I",
+      "body": "This is blog 2",
+      "author": "Malcolm",
+      "id": "2"
+    },
+    {
+      "title": "What I Like",
+      "body": "This is blog 3",
+      "author": "Kanye",
+      "id": "3"
+    },
+    {
+      "id": "9f15",
+      "title": "Hi",
+      "body": "Checking if we get this blog in the JSON server.",
+      "author": ""
+    },
+    {
+      "id": "6674",
+      "title": "Hi",
+      "body": "Checking if we get this blog in the JSON server.",
+      "author": ""
+    },
+    {
+      "id": "a745",
+      "title": "Wait",
+      "body": "this one should work with author.",
+      "author": ""
+    },
+    {
+      "id": "af2b",
+      "title": "Now?",
+      "body": "ok",
+      "author": "Luigi"
+    },
+    {
+      "id": "bd5d",
+      "title": "do i ",
+      "body": "explicity",
+      "author": ""
+    },
+    {
+      "id": "e825",
+      "title": "cuz i did",
+      "body": "nt choose",
+      "author": "Mario"
+    },
+    {
+      "id": "67b5",
+      "title": "ok",
+      "body": "hi",
+      "author": "Mario"
+    },
+    {
+      "id": "925c",
+      "title": "ok",
+      "body": "hi",
+      "author": "Mario"
+    },
+    {
+      "id": "9a8f",
+      "title": "ok",
+      "body": "hi",
+      "author": "Mario"
+    },
+    {
+      "id": "5fed",
+      "title": "ok",
+      "body": "hi",
+      "author": "Luigi"
+    }
+  ]
+}
