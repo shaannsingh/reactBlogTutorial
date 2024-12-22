@@ -180,3 +180,22 @@
   background-color: #2c728a;
   transition: 0.3s;
 }
+
+.page-not-found h2 {
+  color: #2c728a;
+}
+
+.page-not-found p {
+  margin-top: 10px;
+  color: #42a8c9;
+}
+
+.page-not-found a {
+  color: #63c2c2;
+  text-decoration: none;
+}
+
+.page-not-found a:hover {
+  color: #2c728a;
+  transition: 0.3s;
+}
