@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300;400;500;600;700&display=swap');
 
 /* base styles */
 * {
   margin: 0;
-  font-family: "Merriweather";
+  font-family: "Geologica";
   color: #333;
 }
 .navbar {
@@ -87,4 +87,25 @@
 
 .blog-preview button:hover {
   background: #42a8c9;
+}
+
+.blog-preview a {
+  text-decoration: none;
+}
+
+.blog-details h2 {
+  margin: 10px 0;
+  font-size: 30px;
+  color: #2c728a;
+}
+
+.blog-details p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #42a8c9;
+}
+
+.blog-details div {
+  font-size: 15px;
+  color: #2c728a;
 }
