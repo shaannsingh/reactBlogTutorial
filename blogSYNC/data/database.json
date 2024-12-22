@@ -19,64 +19,10 @@
       "id": "3"
     },
     {
-      "id": "9f15",
-      "title": "Hi",
-      "body": "Checking if we get this blog in the JSON server.",
-      "author": ""
-    },
-    {
-      "id": "6674",
-      "title": "Hi",
-      "body": "Checking if we get this blog in the JSON server.",
-      "author": ""
-    },
-    {
-      "id": "a745",
-      "title": "Wait",
-      "body": "this one should work with author.",
-      "author": ""
-    },
-    {
-      "id": "af2b",
-      "title": "Now?",
-      "body": "ok",
-      "author": "Luigi"
-    },
-    {
-      "id": "bd5d",
-      "title": "do i ",
-      "body": "explicity",
-      "author": ""
-    },
-    {
-      "id": "e825",
-      "title": "cuz i did",
-      "body": "nt choose",
-      "author": "Mario"
-    },
-    {
-      "id": "67b5",
-      "title": "ok",
-      "body": "hi",
-      "author": "Mario"
-    },
-    {
-      "id": "925c",
-      "title": "ok",
-      "body": "hi",
-      "author": "Mario"
-    },
-    {
-      "id": "9a8f",
-      "title": "ok",
-      "body": "hi",
-      "author": "Mario"
-    },
-    {
-      "id": "5fed",
-      "title": "ok",
-      "body": "hi",
-      "author": "Luigi"
+      "id": "ffb3",
+      "title": "Last React Tutorial!",
+      "body": "We finally managed to get here! A blog page that covers styling, forms, rendering, useState, useEffect cleanup, Routing, JSON server and adding and deleting blogs within it. It's been sick!",
+      "author": "Shaan"
     }
   ]
 }

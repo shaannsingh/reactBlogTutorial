@@ -112,6 +112,19 @@
   color: #2c728a;
 }
 
+.blog-details button {
+  background-color: #bcddce;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 6px 4px;
+}
+
+.blog-details button:hover {
+  background-color: #77b0c2;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
 .create {
   text-align: center;
   display: block;

@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { Blog } from "../types";
-import { Trash2 } from "lucide-react";
 
 interface BlogListProps {
   blogs: Blog[];
@@ -17,9 +16,6 @@ const BlogList = ({ blogs, heading }: BlogListProps) => {
             <h2>{blog.title}</h2>
             <p>by {blog.author}</p>
           </Link>
-          <button aria-label={`Delete ${blog.title} blog`}>
-            <Trash2 size={12} />
-          </button>
         </div>
       ))}
     </div>

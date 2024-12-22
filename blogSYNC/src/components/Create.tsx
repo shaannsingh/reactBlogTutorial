@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Create = () => {
   const [title, setTitle] = useState<string>("");
   const [body, setBody] = useState<string>("");
-  const [author, setAuthor] = useState<string>("Mario");
+  const [author, setAuthor] = useState<string>("");
   const [isLoading, setIsLoading] = useState<boolean>(false);
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -17,6 +19,7 @@ const Create = () => {
     }).then(() => {
       console.log("New blog added.");
       setIsLoading(false);
+      navigate("/");
     });
   };
 
@@ -40,14 +43,12 @@ const Create = () => {
           onChange={(e) => setBody(e.target.value)}
         />
         <label>Blog author:</label>
-        <select
-          title="Author name"
+        <input
+          placeholder="Who is the author?"
+          required
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
-        >
-          <option value="Mario">Mario</option>
-          <option value="Luigi">Luigi</option>
-        </select>
+        />
         {!isLoading && <button>Add Blog</button>}
         {isLoading && <button disabled>Adding blog...</button>}
       </form>
